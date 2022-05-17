@@ -1,0 +1,14 @@
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/* We are using INHERITANCE here */
+/* Always do inheritance in body */
+
+html {
+  font-size: 62.25%;
+}
+
+body { /* Use body for inheritance */
+  box-sizing: border-box;
+}
