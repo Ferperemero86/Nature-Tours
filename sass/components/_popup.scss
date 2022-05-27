@@ -89,4 +89,9 @@
     -webkit-hyphens: auto;
     hyphens: auto;
   }
+
+  &__btn {
+    transform: translateX(-50%);
+    left: 50%;
+  }
 }
