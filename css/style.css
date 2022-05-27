@@ -18,7 +18,10 @@ html {
 body {
   /* Use body for inheritance */
   box-sizing: border-box;
-  padding: 3rem; }
+  padding: 3rem;
+  border: 1px solid;
+  padding: 0;
+  margin: 0; }
   @media (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -53,6 +56,7 @@ body {
 
 body {
   /* Use body for inheritance */
+  width: 100%;
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
@@ -74,7 +78,7 @@ body {
     @media (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
-        font-family: 6rem; } }
+        font-size: 3rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -84,7 +88,8 @@ body {
     @media (max-width: 37.5em) {
       .heading-primary--sub {
         letter-spacing: 1rem;
-        font-family: .5rem; } }
+        font-size: 1rem;
+        letter-spacing: .75rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -116,6 +121,12 @@ body {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+
+.btn {
+  font-size: 1.6rem; }
+  @media (max-width: 37.5em) {
+    .btn {
+      font-size: 1rem; } }
 
 .u-center-text {
   text-align: center !important; }
@@ -155,7 +166,6 @@ body {
   border-radius: 10rem;
   transition: all .2s;
   position: relative;
-  font-size: 1.6rem;
   border: none;
   cursor: pointer; }
 
@@ -518,28 +528,24 @@ body {
   margin-bottom: 6rem; }
   .heading-primary--main {
     display: block;
-    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 2.5rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
   .heading-primary--sub {
     display: block;
-    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 1.75rem;
     animation-name: moveInRight;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
 
 .footer {
   background-color: #333;
-  padding: 10rem 0;
+  padding: 10rem 4rem;
   font-size: 1.4rem; }
   @media (max-width: 56.25em) {
     .footer {
-      padding: 8rem 0; } }
+      padding: 8rem 4rem; } }
   .footer__row {
     overflow: hidden; }
   .footer__logo-box {
@@ -557,7 +563,9 @@ body {
         width: 100%;
         text-align: center; } }
   .footer__list {
-    list-style: none; }
+    list-style: none;
+    margin-left: 0;
+    padding: 0; }
   .footer__item {
     display: inline-block; }
     .footer__item:not(:last-child) {
@@ -713,7 +721,13 @@ body {
   margin-top: -20vh; }
   @media (max-width: 56.25em) {
     .section-about {
-      padding: 20rem 0; } }
+      padding: 20rem 0;
+      margin-top: -15vh; } }
+  .section-about .col-1-of-2 {
+    text-align: left; }
+    @media (max-width: 37.5em) {
+      .section-about .col-1-of-2 {
+        text-align: center; } }
 
 .section-features {
   padding: 20rem 0;

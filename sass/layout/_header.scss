@@ -44,9 +44,8 @@
 
   &--main {
     display: block;
-    font-size: 6rem;
     font-weight: 400;
-    letter-spacing: 2.5rem;
+    //letter-spacing: 2.5rem;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -54,9 +53,8 @@
   
   &--sub {
     display: block;
-    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 1.75rem;
+    //letter-spacing: 1.75rem;
     animation-name: moveInRight;
     animation-duration: 1s;
     animation-timing-function: ease-out;

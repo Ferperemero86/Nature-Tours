@@ -1,10 +1,10 @@
 .footer {
   background-color: $color-grey-dark-3;
-  padding: 10rem 0;
+  padding: 10rem 4rem;
   font-size: 1.4rem;
 
   @include respond(tab-port) {
-    padding: 8rem 0;
+    padding: 8rem 4rem;
   }
 
   &__row {
@@ -35,6 +35,8 @@
 
   &__list {
     list-style: none;
+    margin-left: 0;
+    padding: 0;
   }
 
   &__item {
