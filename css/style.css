@@ -357,6 +357,11 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block; }
+  @media (max-width: 37.5em) {
+    .form__radio-group {
+      display: block; }
+      .form__radio-group:not(:last-child) {
+        margin-bottom: 1.5rem; } }
 
 .form__radio-label {
   position: relative;
